@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgFoodDetail_Khai"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tvFoodNameDetail_Khai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên món ăn"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvFoodRestaurantDetail_Khai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhà hàng"
+            android:textSize="16sp"
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/tvFoodDescription_Khai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mô tả món ăn..."
+            android:textSize="14sp"
+            android:layout_marginVertical="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radioSizeGroup_Khai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioSizeS_Khai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Size S"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioSizeM_Khai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Size M" />
+
+            <RadioButton
+                android:id="@+id/radioSizeL_Khai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Size L" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvFoodPriceDetail_Khai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giá: 10000 VNĐ"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>
